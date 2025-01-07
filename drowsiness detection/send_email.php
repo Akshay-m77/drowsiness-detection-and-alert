@@ -44,11 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mail->Host='smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username ='akshaym7033@gmail.com';
-    $mail->Password = 'osxnwznddmbbtbrm';
+    $mail->Username ='';//mail id
+    $mail->Password = '';//password
     $mail->SMTPSecure = 'ssl';
     $mail->Port =465;
-    $mail->setFrom('akshaym7033@gmail.com');
+    $mail->setFrom('');//add email id
     $mail->addAddress($to);
     $mail->isHTML(true);
     $mail->Subject = $subject;
